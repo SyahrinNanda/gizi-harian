@@ -121,6 +121,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.energi.kecil}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">kkal</span></td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.energi.besar}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">kkal</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.energi.balita ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">kkal</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.energi.bumil ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">kkal</span></td>
             <td class="py-space-sm px-space-sm text-right"><span class="inline-block px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">${data.gizi.energi.akg}</span></td>
           </tr>
           <tr style="animation-delay: 225ms" class="hover:bg-white/[0.04] transition-colors group opacity-0 animate-fade-in-up">
@@ -132,6 +134,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.protein.kecil}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.protein.besar}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.protein.balita ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.protein.bumil ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-right"><span class="inline-block px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-label-sm text-label-sm font-semibold">${data.gizi.protein.akg}</span></td>
           </tr>
           <tr style="animation-delay: 300ms" class="hover:bg-white/[0.04] transition-colors group opacity-0 animate-fade-in-up">
@@ -143,6 +147,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.lemak.kecil}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.lemak.besar}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.lemak.balita ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.lemak.bumil ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-right"><span class="inline-block px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">${data.gizi.lemak.akg}</span></td>
           </tr>
           <tr style="animation-delay: 375ms" class="hover:bg-white/[0.04] transition-colors group opacity-0 animate-fade-in-up">
@@ -154,6 +160,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.karbohidrat.kecil}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.karbohidrat.besar}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.karbohidrat.balita ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.karbohidrat.bumil ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-right"><span class="inline-block px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">${data.gizi.karbohidrat.akg}</span></td>
           </tr>
           <tr style="animation-delay: 450ms" class="hover:bg-white/[0.04] transition-colors group opacity-0 animate-fade-in-up">
@@ -165,6 +173,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.serat.kecil}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.serat.besar}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.serat.balita ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+            <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span class="font-metric-num-md text-metric-num-md text-primary font-bold">${data.gizi.serat.bumil ?? ''}</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
             <td class="py-space-sm px-space-sm text-right"><span class="inline-block px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-label-sm text-label-sm font-semibold">${data.gizi.serat.akg}</span></td>
           </tr>
         `;
@@ -173,6 +183,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       // 4. Update AKG Charts
       const chartsContainer = document.querySelector('.progress-charts');
       if (chartsContainer) {
+        // Nilai aman untuk porsi baru (balita/bumil) agar data lama tanpa porsi ini tidak error
+        const balitaChart = data.akg_charts.balita ?? {};
+        const bumilChart = data.akg_charts.bumil ?? {};
+        const balitaKalori = balitaChart.kalori?.current ?? 0;
+        const balitaProtein = balitaChart.protein?.current ?? 0;
+        const bumilKalori = bumilChart.kalori?.current ?? 0;
+        const bumilProtein = bumilChart.protein?.current ?? 0;
+        const balitaTarget = (balitaKalori >= 100 && balitaProtein >= 100) ? '100%' : Math.min(balitaKalori, balitaProtein) + '%';
+        const bumilTarget = (bumilKalori >= 100 && bumilProtein >= 100) ? '100%' : Math.min(bumilKalori, bumilProtein) + '%';
         chartsContainer.innerHTML = `
           <!-- Box Porsi Kecil -->
           <div style="animation-delay: 200ms" class="opacity-0 animate-fade-in-up bg-surface-container-high/70 p-space-md rounded-xl flex flex-col gap-space-xs border border-surface-container-high hover:border-primary/30 transition-colors">
@@ -225,6 +244,62 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
                   <div class="progress-bar h-full bg-tertiary-container rounded-full transition-all duration-[1500ms] ease-out delay-300" style="width: 0%;" data-width="${Math.min(100, data.akg_charts.besar.protein.current)}%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Box Porsi Balita -->
+          <div style="animation-delay: 500ms" class="opacity-0 animate-fade-in-up bg-surface-container-high/70 p-space-md rounded-xl flex flex-col gap-space-xs border border-surface-container-high hover:border-primary/30 transition-colors">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md text-on-surface font-semibold">Tingkat Kecukupan AKG (Porsi Balita)</span>
+              <span class="font-label-sm text-label-sm text-primary font-bold">${balitaTarget} Target Tercapai</span>
+            </div>
+            <div class="space-y-3 mt-1">
+              <div>
+                <div class="flex justify-between text-[11px] text-outline mb-1 font-semibold tracking-wider">
+                  <span>KALORI</span>
+                  <span class="text-on-surface font-mono">${balitaKalori}%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                  <div class="progress-bar h-full bg-primary rounded-full transition-all duration-[1500ms] ease-out delay-400" style="width: 0%;" data-width="${Math.min(100, balitaKalori)}%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-[11px] text-outline mb-1 font-semibold tracking-wider">
+                  <span>PROTEIN</span>
+                  <span class="text-on-surface font-mono">${balitaProtein}%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                  <div class="progress-bar h-full bg-tertiary-container rounded-full transition-all duration-[1500ms] ease-out delay-500" style="width: 0%;" data-width="${Math.min(100, balitaProtein)}%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Box Porsi Bumil -->
+          <div style="animation-delay: 650ms" class="opacity-0 animate-fade-in-up bg-surface-container-high/70 p-space-md rounded-xl flex flex-col gap-space-xs border border-surface-container-high hover:border-primary/30 transition-colors">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md text-on-surface font-semibold">Tingkat Kecukupan AKG (Porsi Bumil)</span>
+              <span class="font-label-sm text-label-sm text-primary font-bold">${bumilTarget} Target Tercapai</span>
+            </div>
+            <div class="space-y-3 mt-1">
+              <div>
+                <div class="flex justify-between text-[11px] text-outline mb-1 font-semibold tracking-wider">
+                  <span>KALORI</span>
+                  <span class="text-on-surface font-mono">${bumilKalori}%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                  <div class="progress-bar h-full bg-primary rounded-full transition-all duration-[1500ms] ease-out delay-600" style="width: 0%;" data-width="${Math.min(100, bumilKalori)}%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-[11px] text-outline mb-1 font-semibold tracking-wider">
+                  <span>PROTEIN</span>
+                  <span class="text-on-surface font-mono">${bumilProtein}%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                  <div class="progress-bar h-full bg-tertiary-container rounded-full transition-all duration-[1500ms] ease-out delay-700" style="width: 0%;" data-width="${Math.min(100, bumilProtein)}%"></div>
                 </div>
               </div>
             </div>
