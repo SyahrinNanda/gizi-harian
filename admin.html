@@ -299,6 +299,40 @@
                     </div>
                   </div>
                 </div>
+                <!-- Balita -->
+                <div class="p-3 bg-surface-container rounded-lg">
+                  <p class="text-sm font-bold text-on-surface mb-3 border-b border-surface-container-highest pb-2">
+                    Target Porsi Balita</p>
+                  <div class="space-y-3">
+                    <div>
+                      <label class="text-xs text-on-surface-variant">Kalori (%)</label>
+                      <input v-model.number="activeDayData.akg_charts.balita.kalori.current" type="number"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-2 mt-1 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                    <div>
+                      <label class="text-xs text-on-surface-variant">Protein (%)</label>
+                      <input v-model.number="activeDayData.akg_charts.balita.protein.current" type="number"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-2 mt-1 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                  </div>
+                </div>
+                <!-- Bumil -->
+                <div class="p-3 bg-surface-container rounded-lg">
+                  <p class="text-sm font-bold text-on-surface mb-3 border-b border-surface-container-highest pb-2">
+                    Target Porsi Bumil</p>
+                  <div class="space-y-3">
+                    <div>
+                      <label class="text-xs text-on-surface-variant">Kalori (%)</label>
+                      <input v-model.number="activeDayData.akg_charts.bumil.kalori.current" type="number"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-2 mt-1 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                    <div>
+                      <label class="text-xs text-on-surface-variant">Protein (%)</label>
+                      <input v-model.number="activeDayData.akg_charts.bumil.protein.current" type="number"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-2 mt-1 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
@@ -311,12 +345,35 @@
                   class="material-symbols-outlined">nutrition</span> Tabel Kandungan Gizi</h2>
               <div class="space-y-3">
                 <div v-for="(giziData, key) in activeDayData.gizi" :key="key"
-                  class="flex gap-2 items-center bg-surface-container p-2 rounded-lg">
-                  <div class="w-24 shrink-0 font-semibold text-sm capitalize text-on-surface">{{ key }}</div>
-                  <input v-model="activeDayData.gizi[key].besar" type="text" placeholder="Nilai (Besar)"
-                    class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
-                  <input v-model="activeDayData.gizi[key].akg" type="text" placeholder="Standar AKG"
-                    class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
+                  class="bg-surface-container p-3 rounded-lg border border-surface-container-highest">
+                  <div class="text-sm font-bold capitalize text-primary mb-2">{{ key }}</div>
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    <div>
+                      <label class="text-xs text-on-surface-variant block mb-1">Porsi Kecil</label>
+                      <input v-model="activeDayData.gizi[key].kecil" type="text" placeholder="Nilai (Kecil)"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                    <div>
+                      <label class="text-xs text-on-surface-variant block mb-1">Porsi Besar</label>
+                      <input v-model="activeDayData.gizi[key].besar" type="text" placeholder="Nilai (Besar)"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                    <div>
+                      <label class="text-xs text-on-surface-variant block mb-1">Porsi Balita</label>
+                      <input v-model="activeDayData.gizi[key].balita" type="text" placeholder="Nilai (Balita)"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                    <div>
+                      <label class="text-xs text-on-surface-variant block mb-1">Porsi Bumil</label>
+                      <input v-model="activeDayData.gizi[key].bumil" type="text" placeholder="Nilai (Bumil)"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                    <div>
+                      <label class="text-xs text-on-surface-variant block mb-1">Standar AKG</label>
+                      <input v-model="activeDayData.gizi[key].akg" type="text" placeholder="Standar AKG"
+                        class="w-full bg-surface-container-low border border-surface-container-highest text-on-surface p-1.5 rounded focus:border-primary outline-none text-sm">
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -473,7 +530,32 @@
           try {
             const { data: records, error } = await supabaseClient.from('app_settings').select('menu_json').limit(1);
             if (error || !records || records.length === 0) throw new Error();
-            allData.value = records[0].menu_json;
+            const loaded = records[0].menu_json;
+            // Normalisasi agar data lama (tanpa porsi balita/bumil) tetap berfungsi
+            loaded.forEach(day => {
+              if (day.gizi) {
+                Object.keys(day.gizi).forEach(gk => {
+                  const g = day.gizi[gk];
+                  if (typeof g === 'object' && g !== null) {
+                    if (g.kecil === undefined) g.kecil = '';
+                    if (g.besar === undefined) g.besar = '';
+                    if (g.balita === undefined) g.balita = '';
+                    if (g.bumil === undefined) g.bumil = '';
+                    if (g.akg === undefined) g.akg = '';
+                  }
+                });
+              }
+              if (day.akg_charts) {
+                ['kecil', 'besar', 'balita', 'bumil'].forEach(p => {
+                  if (!day.akg_charts[p]) day.akg_charts[p] = {};
+                  if (!day.akg_charts[p].kalori) day.akg_charts[p].kalori = {};
+                  if (day.akg_charts[p].kalori.current === undefined) day.akg_charts[p].kalori.current = 0;
+                  if (!day.akg_charts[p].protein) day.akg_charts[p].protein = {};
+                  if (day.akg_charts[p].protein.current === undefined) day.akg_charts[p].protein.current = 0;
+                });
+              }
+            });
+            allData.value = loaded;
             setTimeout(() => { hasUnsavedChanges.value = false; }, 100);
           } catch (err) {
             alert('Gagal memuat data dari Supabase!');
