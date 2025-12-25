@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const response = await fetch('assets/data.json');
-    const menuData = await response.json();
+    // Fetch from Supabase Cloud
+    const { data: records, error } = await supabaseClient
+      .from('app_settings')
+      .select('menu_json')
+      .limit(1);
+      
+    if (error || !records || records.length === 0) throw new Error("Gagal mengambil data dari Supabase");
+    const menuData = records[0].menu_json;
 
     const daysIndo = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
     const monthsIndo = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
