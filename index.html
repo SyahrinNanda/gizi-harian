@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Makan Bergizi Gratis</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main> :first-child {
+        margin-top: 0 !important;
+      }
+
+      main> :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#171f33",
+            "outline-variant": "#534434",
+            "on-tertiary-fixed-variant": "#004c69",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "on-surface": "#dae2fd",
+            "on-tertiary": "#00354a",
+            "on-tertiary-fixed": "#001e2c",
+            "on-secondary-container": "#ffaea8",
+            "on-primary-fixed": "#2a1700",
+            "surface-tint": "#ffb95f",
+            "primary": "#ffc174",
+            "on-secondary-fixed-variant": "#930013",
+            "inverse-surface": "#dae2fd",
+            "inverse-primary": "#855300",
+            "inverse-on-surface": "#283044",
+            "on-error": "#690005",
+            "on-primary-container": "#613b00",
+            "surface-bright": "#31394d",
+            "on-secondary": "#68000a",
+            "surface-container-lowest": "#060e20",
+            "on-error-container": "#ffdad6",
+            "surface-container-highest": "#2d3449",
+            "outline": "#a08e7a",
+            "on-tertiary-container": "#004965",
+            "primary-fixed-dim": "#ffb95f",
+            "background": "#0b1326",
+            "surface-dim": "#0b1326",
+            "secondary-fixed": "#ffdad7",
+            "surface-variant": "#2d3449",
+            "primary-fixed": "#ffddb8",
+            "surface-container-low": "#131b2e",
+            "error": "#ffb4ab",
+            "secondary-fixed-dim": "#ffb3ad",
+            "surface-container-high": "#222a3d",
+            "on-secondary-fixed": "#410004",
+            "tertiary-fixed": "#c4e7ff",
+            "error-container": "#93000a",
+            "tertiary-container": "#38bdf8",
+            "secondary": "#ffb3ad",
+            "primary-container": "#f59e0b",
+            "on-primary": "#472a00",
+            "tertiary": "#8ed5ff",
+            "on-background": "#dae2fd",
+            "on-surface-variant": "#d8c3ad",
+            "secondary-container": "#a40217",
+            "on-primary-fixed-variant": "#653e00",
+            "surface": "#0b1326"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.5rem",
+            "card-pad-sm": "1rem",
+            "gutter-desktop": "1.5rem",
+            "space-xxs": "0.25rem",
+            "card-pad-md": "1.25rem",
+            "space-3xl": "3rem",
+            "space-md": "1rem",
+            "space-2xl": "2.5rem",
+            "space-sm": "0.75rem",
+            "space-xl": "2rem",
+            "card-pad-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "display-lg": ["Plus Jakarta Sans"],
+            "metric-num-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "metric-num-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "metric-num-lg": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "metric-num-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }]
+          },
+          "keyframes": {
+            "fade-in-up": {
+              "0%": { opacity: "0", transform: "translateY(15px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" }
+            },
+            "scale-in": {
+              "0%": { opacity: "0", transform: "scale(0.95)" },
+              "100%": { opacity: "1", transform: "scale(1)" }
+            }
+          },
+          "animation": {
+            "fade-in-up": "fade-in-up 0.5s ease-out forwards",
+            "scale-in": "scale-in 0.4s ease-out forwards"
+          }
+        }
+      }
+
+    }
+  </script>
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface min-h-screen flex flex-col">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-surface-container-low/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
+    <div
+      class="h-16 md:h-20 w-full px-4 md:px-gutter-desktop max-w-[1440px] mx-auto flex items-center justify-between gap-2 md:gap-space-lg">
+      <div
+        class="flex items-center gap-2 md:gap-space-md cursor-pointer hover:opacity-80 transition-opacity overflow-hidden">
+        <div
+          class="shrink-0 w-9 h-9 md:w-11 md:h-11 rounded-full overflow-hidden bg-surface-container-high flex items-center justify-center shadow-[0_0_16px_-4px_rgba(245,158,11,0.2)]">
+          <img src="assets/image/logo-sppg.jpg" alt="Logo SPPG" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span class="font-headline-sm text-[15px] md:text-headline-sm text-primary tracking-tight truncate">MAKAN
+            BERGIZI GRATIS</span>
+          <span class="font-label-sm text-[10px] md:text-label-sm text-on-surface-variant truncate">SPPG Konta Makassar
+            - Yayasan Tunas Ilmu</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-space-xl">
+        <div class="flex items-center gap-space-md">
+          <div class="hidden md:flex flex-col text-right">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Status Tanggal
+              Operasional</span>
+            <span class="font-label-md text-label-md text-on-surface font-semibold" id="current-date">Kamis, 27 Agustus
+              2026</span>
+          </div>
+          <div class="flex items-center gap-space-sm pl-space-xs cursor-pointer hover:opacity-80 transition-opacity">
+            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+            </div>
+            <div class="hidden xl:flex flex-col text-left">
+              <span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Petugas SPPG</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Gantarangkeke 1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-16 md:pt-20 bg-background flex-1">
+    <div class="w-full max-w-[1440px] mx-auto px-4 md:px-gutter-desktop py-space-md md:py-space-lg">
+      <div class="flex flex-col w-full">
+        <!-- Sub-Header Status Bar -->
+        <div
+          class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm pb-space-lg">
+          <div class="flex flex-col min-w-0">
+            <div
+              class="flex flex-wrap items-center gap-1 md:gap-space-xs text-on-surface-variant font-label-sm text-label-sm tracking-wide uppercase">
+              <span class="material-symbols-outlined text-[16px] text-primary shrink-0">location_on</span>
+              <span class="truncate max-w-full">SPPG Kota Makassar</span>
+              <span class="hidden md:inline">•</span>
+              <span class="truncate max-w-full">Wilayah Layanan Makassar, Sulawesi Selatan</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-space-sm mt-space-xxs">
+              <h1 id="main-date" class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Kamis, 27
+                Agustus 2026</h1>
+              <span
+                class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full bg-primary/15 text-primary text-label-sm font-label-sm border border-primary/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Hari Ini
+              </span>
+              <span
+                class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-label-sm font-label-sm">
+                <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Terkirim &amp; Siap Santap
+              </span>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-xs self-stretch md:self-auto justify-end">
+            <div
+              class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-space-xs rounded-xl shadow-sm hover:bg-surface-container-highest transition-colors cursor-pointer">
+              <span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+              <div class="flex flex-col text-right">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Batch Distribusi</span>
+                <span class="font-label-md text-label-md text-on-surface font-semibold">07:30 WITA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Multi-Column Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg w-full items-start">
+
+          <!-- LEFT SIDEBAR -->
+          <aside class="lg:col-span-4 xl:col-span-3 flex flex-col gap-space-lg w-full">
+            <!-- Left: Documentation Photo Card -->
+            <div
+              class="xl:col-span-5 bg-surface-container rounded-xl p-card-pad-md shadow-md flex flex-col justify-between overflow-hidden relative group transition-transform hover:-translate-y-1 duration-300 cursor-pointer">
+              <div class="flex items-center justify-between mb-space-xs">
+                <div class="flex items-center gap-space-xxs text-primary">
+                  <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+                  <span class="font-label-md text-label-md font-semibold">Dokumentasi Sajian</span>
+                </div>
+                <span
+                  class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-mono">
+                  <span id="dok-batch">BATCH #07:30-WITA</span>
+                </span>
+              </div>
+              <!-- Hero Food Image -->
+              <div
+                class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-lowest shadow-inner my-space-xs">
+                <img id="dok-img" alt="Dokumentasi nampan ompreng stainless"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK_vgRD6_ats2fkjT9mlaS4dMkY1zjnWH5khudazsJTiYv3a04zhubMStaeBaODU8VveMDMlMgFi0AegLJ-e6KGN36Z-tgDYafNZP92HBcNtQpbVywPZqINGEtyT9gGMoFmwRurYYMas56fufJqCg2aUM5CaX4r0UsXLsw_Sf7Bvcr7-HlYle_1_NV51vTsQ_N_KkmVLBHvRugNI4GlVlMTSb7MCrhRJM9R_twntYUix9W2ZeMvWbND8ZZiO6hWhiQ" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div
+                  class="absolute bottom-3 left-3 right-3 flex flex-col gap-1 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                  <div
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur-md w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Ompreng Stainless Food
+                      Grade 304</span>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-tight drop-shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                    <span id="dok-desc">Nasi putih, dimsum ayam kukus, tempe oreg renyah gurih, sayur labu kuning, dan jeruk manis lokal.</span>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs text-outline font-label-sm text-label-sm">
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[15px]">verified_user</span>
+                  Lolos Uji Organoleptik
+                </span>
+                <span>Suhu Saji: 62°C</span>
+              </div>
+            </div>
+
+
+
+            <!-- Peringatan Marun Wajib Diperhatikan -->
+            <section
+              class="bg-secondary-container/90 rounded-xl p-card-pad-md shadow-lg text-on-secondary-container flex flex-col gap-space-md transition-transform hover:-translate-y-1 duration-300">
+              <div class="flex items-center gap-space-xs">
+                <div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-secondary">
+                  <span class="material-symbols-outlined text-[20px]"
+                    style="font-variation-settings: 'FILL' 1;">warning</span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="font-headline-sm text-headline-sm text-white font-bold leading-none">Wajib Diperhatikan
+                  </h2>
+                  <span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase">Protokol Keamanan
+                    Pangan</span>
+                </div>
+              </div>
+              <div class="flex flex-col gap-space-sm">
+                <div
+                  class="flex items-start gap-space-xs bg-black/25 p-space-xs rounded-lg hover:bg-black/40 transition-colors cursor-default">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">timer</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-label-md text-white font-semibold">Makan sekarang, di sekolah</span>
+                    <p class="font-body-sm text-body-sm text-secondary/90 leading-snug">Habiskan paling lambat <strong
+                        class="text-white">2 jam</strong> setelah ompreng diterima. Makanan ini dimasak segar tanpa
+                      bahan pengawet sintesis.</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-space-xs bg-black/25 p-space-xs rounded-lg hover:bg-black/40 transition-colors cursor-default">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">no_backpack</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-label-md text-white font-semibold">Jangan dibawa pulang</span>
+                    <p class="font-body-sm text-body-sm text-secondary/90 leading-snug">Makanan yang disimpan di suhu
+                      ruang berisiko basi dan menyebabkan gangguan pencernaan atau keracunan bakteri.</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-space-xs bg-black/25 p-space-xs rounded-lg hover:bg-black/40 transition-colors cursor-default">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">recycling</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-label-md text-white font-semibold">Ompreng dikembalikan ke
+                      petugas</span>
+                    <p class="font-body-sm text-body-sm text-secondary/90 leading-snug">Setelah selesai makan, kumpulkan
+                      ompreng stainless steril ke meja posko pembersihan SPPG sekolah.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Kitchen Certificate Widget -->
+            <div
+              class="bg-surface-container-low rounded-xl p-card-pad-sm flex items-center gap-space-sm hover:bg-surface-container transition-colors cursor-pointer group">
+              <div
+                class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Standar Higienitas</span>
+                <span class="font-label-md text-label-md text-on-surface font-semibold truncate">HACCP &amp; Sertifikat
+                  Halal</span>
+                <span class="font-body-sm text-body-sm text-outline text-[11px]">Dapur SPPG Kota Makassar</span>
+              </div>
+            </div>
+            <!-- Weekly Selector Card -->
+            <section
+              class="bg-surface-container rounded-xl p-card-pad-md shadow-md flex flex-col gap-space-md transition-transform hover:-translate-y-1 duration-300">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+                  <h2 class="font-headline-sm text-headline-sm text-on-surface">Menu Minggu Ini</h2>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Siklus 4</span>
+              </div>
+              <div class="flex flex-col gap-space-xs" id="weekly-menu">
+                <button
+                  class="menu-day-btn w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-all text-left group"
+                  type="button">
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="font-metric-num-md text-metric-num-md text-on-surface-variant group-hover:text-on-surface w-8">24</span>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Senin</span>
+                      <span class="font-body-sm text-body-sm text-outline truncate max-w-[130px]">Ayam Kecap &amp; Sup
+                        Jagung</span>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">Selesai</span>
+                </button>
+
+                <button
+                  class="menu-day-btn w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-all text-left group"
+                  type="button">
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="font-metric-num-md text-metric-num-md text-on-surface-variant group-hover:text-on-surface w-8">25</span>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Selasa</span>
+                      <span class="font-body-sm text-body-sm text-outline truncate max-w-[130px]">Ikan Nila Bakar &amp;
+                        Bayam</span>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">Selesai</span>
+                </button>
+
+                <button
+                  class="menu-day-btn w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-all text-left group"
+                  type="button">
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="font-metric-num-md text-metric-num-md text-on-surface-variant group-hover:text-on-surface w-8">26</span>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Rabu</span>
+                      <span class="font-body-sm text-body-sm text-outline truncate max-w-[130px]">Bola Daging Saus
+                        Tiram</span>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">Selesai</span>
+                </button>
+
+                <button
+                  class="menu-day-btn active-day w-full flex items-center justify-between px-space-sm py-space-sm rounded-lg bg-primary text-on-primary font-semibold shadow-md transform scale-[1.02] text-left transition-transform"
+                  type="button">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="font-metric-num-md text-metric-num-md text-on-primary w-8">27</span>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md font-bold tracking-tight">Kamis (Hari Ini)</span>
+                      <span class="font-body-sm text-body-sm text-on-primary/90">Dimsum Ayam &amp; Tempe</span>
+                    </div>
+                  </div>
+                  <span class="material-symbols-outlined text-[18px]">restaurant</span>
+                </button>
+
+                <button
+                  class="menu-day-btn w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low/70 hover:bg-surface-container-high transition-all text-left group"
+                  type="button">
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="font-metric-num-md text-metric-num-md text-on-surface-variant group-hover:text-on-surface w-8">28</span>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Jumat</span>
+                      <span class="font-body-sm text-body-sm text-outline truncate max-w-[130px]">Telur Balado &amp;
+                        Sayur Lodeh</span>
+                    </div>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/20 text-primary">Besok</span>
+                </button>
+
+                <button
+                  class="menu-day-btn w-full flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low/40 hover:bg-surface-container-high transition-all text-left group opacity-75"
+                  type="button">
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="font-metric-num-md text-metric-num-md text-on-surface-variant group-hover:text-on-surface w-8">29</span>
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Sabtu</span>
+                      <span class="font-body-sm text-body-sm text-outline truncate max-w-[130px]">Nasi Kuning Komplit
+                        MBG</span>
+                    </div>
+                  </div>
+                  <span class="font-label-sm text-label-sm text-outline">Terjadwal</span>
+                </button>
+              </div>
+            </section>
+          </aside>
+
+          <!-- RIGHT MAIN CONTENT -->
+          <div class="lg:col-span-8 xl:col-span-9 flex flex-col gap-space-lg w-full">
+
+            <!-- Top Row: Photo + Food Items Breakdown -->
+            <section class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-stretch">
+
+              <!-- Right: Isi Ompreng Detail -->
+              <div
+                class="xl:col-span-12 bg-surface-container rounded-xl p-card-pad-md shadow-md flex flex-col justify-between gap-space-md transition-transform hover:-translate-y-1 duration-300">
+                <div class="flex items-center justify-between pb-space-xxs">
+                  <div class="flex items-center gap-space-xs">
+                    <span class="material-symbols-outlined text-primary text-[22px]">lunch_dining</span>
+                    <div>
+                      <h2 class="font-headline-sm text-headline-sm text-on-surface">Isi Ompreng Hari Ini</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Komposisi 5 unsur makanan bergizi
+                        seimbang</p>
+                    </div>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold hover:bg-primary/20 transition-colors cursor-default">
+                    5 Menu Lengkap
+                  </span>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm flex-1" id="food-cards-container">
+                  <!-- Item 1: Nasi Putih -->
+                  <div
+                    class="food-card sm:col-span-2 bg-surface-container-high rounded-xl p-space-sm flex items-center justify-between gap-space-sm hover:bg-surface-container-highest transition-all hover:shadow-lg cursor-pointer transform hover:-translate-y-0.5">
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0 shadow-sm transition-transform duration-300 icon-wrapper">
+                        <span class="material-symbols-outlined text-[22px]">rice_bowl</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-primary-fixed uppercase tracking-wider font-semibold">Makanan
+                            Pokok</span>
+                          <span class="font-label-sm text-label-sm text-emerald-400 flex items-center gap-0.5"><span
+                              class="material-symbols-outlined text-[13px]">check</span>Beras Premium</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">Nasi Putih
+                          Pulen</h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Porsi pas, hangat, dimasak dari
+                          beras petani lokal Makassar tanpa pemutih.</p>
+                      </div>
+                    </div>
+                    <div class="text-right shrink-0">
+                      <span class="font-metric-num-md text-metric-num-md text-primary block">100 - 180g</span>
+                      <span class="font-label-sm text-label-sm text-outline">Tergantung jenjang</span>
+                    </div>
+                  </div>
+
+                  <!-- Item 2: Lauk Hewani -->
+                  <div
+                    class="food-card bg-surface-container-high rounded-xl p-space-sm flex flex-col justify-between gap-space-xs hover:bg-surface-container-highest transition-all hover:shadow-lg cursor-pointer transform hover:-translate-y-0.5">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-amber-500/15 text-primary uppercase tracking-wider font-semibold">Lauk
+                        Hewani</span>
+                      <span
+                        class="material-symbols-outlined text-primary text-[20px] transition-transform duration-300 icon-wrapper">set_meal</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dimsum Ayam</h3>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">2 pcs padat gizi protein tinggi
+                        dari daging ayam cincang segar rempah alami, dikukus higienis.</p>
+                    </div>
+                    <div
+                      class="pt-space-xxs flex items-center justify-between font-label-sm text-label-sm text-outline">
+                      <span>Sumber Protein</span>
+                      <span class="text-on-surface font-semibold">9.8g Protein</span>
+                    </div>
+                  </div>
+
+                  <!-- Item 3: Lauk Nabati -->
+                  <div
+                    class="food-card bg-surface-container-high rounded-xl p-space-sm flex flex-col justify-between gap-space-xs hover:bg-surface-container-highest transition-all hover:shadow-lg cursor-pointer transform hover:-translate-y-0.5">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary/15 text-tertiary uppercase tracking-wider font-semibold">Lauk
+                        Nabati</span>
+                      <span
+                        class="material-symbols-outlined text-tertiary text-[20px] transition-transform duration-300 icon-wrapper">spa</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tempe Oreg</h3>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Gurih manis renyah kaya
+                        isoflavon dan protein nabati berbahan dasar kedelai murni pilihan.</p>
+                    </div>
+                    <div
+                      class="pt-space-xxs flex items-center justify-between font-label-sm text-label-sm text-outline">
+                      <span>Fermentasi Alami</span>
+                      <span class="text-on-surface font-semibold">5.3g Protein</span>
+                    </div>
+                  </div>
+
+                  <!-- Item 4: Sayuran -->
+                  <div
+                    class="food-card bg-surface-container-high rounded-xl p-space-sm flex flex-col justify-between gap-space-xs hover:bg-surface-container-highest transition-all hover:shadow-lg cursor-pointer transform hover:-translate-y-0.5">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 uppercase tracking-wider font-semibold">Sayur
+                        Segar</span>
+                      <span
+                        class="material-symbols-outlined text-emerald-400 text-[20px] transition-transform duration-300 icon-wrapper">nutrition</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sayur Bening Labu
+                        &amp; Kacang</h3>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Labu kuning manis dan kacang
+                        panjang renyah dalam kaldu bening gurih tanpa MSG buatan.</p>
+                    </div>
+                    <div
+                      class="pt-space-xxs flex items-center justify-between font-label-sm text-label-sm text-outline">
+                      <span>Vit. A &amp; Serat Pangan</span>
+                      <span class="text-on-surface font-semibold">Kaya Mikronutrien</span>
+                    </div>
+                  </div>
+
+                  <!-- Item 5: Buah Pencuci Mulut -->
+                  <div
+                    class="food-card bg-surface-container-high rounded-xl p-space-sm flex flex-col justify-between gap-space-xs hover:bg-surface-container-highest transition-all hover:shadow-lg cursor-pointer transform hover:-translate-y-0.5">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-orange-500/15 text-orange-300 uppercase tracking-wider font-semibold">Buah
+                        Segar</span>
+                      <span
+                        class="material-symbols-outlined text-orange-300 text-[20px] transition-transform duration-300 icon-wrapper">nutrition</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Jeruk Madu Siam</h3>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">1 butir buah utuh segar bercita
+                        rasa manis asam alami, pembersih mulut kaya vitamin C.</p>
+                    </div>
+                    <div
+                      class="pt-space-xxs flex items-center justify-between font-label-sm text-label-sm text-outline">
+                      <span>Imunitas Tubuh</span>
+                      <span class="text-on-surface font-semibold">45mg Vit C</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Bottom Section: Comprehensive Nutrition Panel -->
+            <section
+              class="bg-surface-container rounded-xl p-card-pad-lg shadow-md flex flex-col gap-space-md transition-transform hover:-translate-y-1 duration-300">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs pb-space-xs">
+                <div>
+                  <div class="flex items-center gap-space-xs">
+                    <span class="material-symbols-outlined text-primary text-[24px]">analytics</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface font-bold">Kandungan Gizi Per Porsi
+                    </h2>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Perhitungan akurat laboratorium
+                    pangan dan ahli gizi terakreditasi berdasarkan target Angka Kecukupan Gizi (AKG) nasional.</p>
+                </div>
+                <div class="flex items-center gap-space-xs shrink-0">
+                  <span
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors cursor-pointer">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Standar Permenkes No. 28 / BGN
+                  </span>
+                </div>
+              </div>
+
+              <!-- Comparative Nutrition Table -->
+              <div
+                class="w-full overflow-x-auto rounded-xl bg-surface-container-lowest/60 p-space-sm border border-surface-container-highest/30">
+                <table class="w-full text-left border-collapse min-w-[620px]">
+                  <thead>
+                    <tr class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+                      <th class="py-space-xs px-space-sm font-semibold">Zat Gizi Makro &amp; Energi</th>
+                      <th
+                        class="py-space-xs px-space-sm font-semibold text-center bg-surface-container-high/40 rounded-l-lg">
+                        <div class="flex flex-col items-center">
+                          <span class="text-primary font-bold">PORSI KECIL</span>
+                          <span class="text-outline text-[11px] font-normal lowercase tracking-normal">(PAUD - SD Kelas
+                            3)</span>
+                        </div>
+                      </th>
+                      <th
+                        class="py-space-xs px-space-sm font-semibold text-center bg-surface-container-high/70 rounded-r-lg">
+                        <div class="flex flex-col items-center">
+                          <span class="text-primary font-bold">PORSI BESAR</span>
+                          <span class="text-outline text-[11px] font-normal lowercase tracking-normal">(SD Kelas 4 -
+                            SMA/SMK)</span>
+                        </div>
+                      </th>
+                      <th class="py-space-xs px-space-sm font-semibold text-right">Rekomendasi AKG MBG</th>
+                    </tr>
+                  </thead>
+                  <tbody id="gizi-table-body" class="divide-y divide-surface-container-high/60 font-body-md text-body-md">
+                    <tr class="hover:bg-white/[0.04] transition-colors group">
+                      <td class="py-space-sm px-space-sm">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-amber-400 text-[18px] group-hover:scale-110 transition-transform">bolt</span>
+                          <span class="font-semibold text-on-surface">Energi Total</span>
+                        </div>
+                      </td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">448.19</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">kkal</span></td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">736.55</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">kkal</span></td>
+                      <td class="py-space-sm px-space-sm text-right"><span
+                          class="inline-block px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">30-35%
+                          Total Harian</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/[0.04] transition-colors group">
+                      <td class="py-space-sm px-space-sm">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-tertiary-container text-[18px] group-hover:scale-110 transition-transform">fitness_center</span>
+                          <span class="font-semibold text-on-surface">Protein</span>
+                        </div>
+                      </td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">15.13</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">25.03</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-right"><span
+                          class="inline-block px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-label-sm text-label-sm font-semibold">Tinggi
+                          Protein</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/[0.04] transition-colors group">
+                      <td class="py-space-sm px-space-sm">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-yellow-300 text-[18px] group-hover:scale-110 transition-transform">opacity</span>
+                          <span class="font-semibold text-on-surface">Lemak Sehat</span>
+                        </div>
+                      </td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">19.04</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">26.58</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-right"><span
+                          class="inline-block px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">&lt;
+                          25% Energi</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/[0.04] transition-colors group">
+                      <td class="py-space-sm px-space-sm">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-amber-500 text-[18px] group-hover:scale-110 transition-transform">grain</span>
+                          <span class="font-semibold text-on-surface">Karbohidrat</span>
+                        </div>
+                      </td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">56.42</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">102.44</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-right"><span
+                          class="inline-block px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Kompleks
+                          &amp; Pulen</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/[0.04] transition-colors group">
+                      <td class="py-space-sm px-space-sm">
+                        <div class="flex items-center gap-space-xs">
+                          <span
+                            class="material-symbols-outlined text-emerald-400 text-[18px] group-hover:scale-110 transition-transform">grass</span>
+                          <span class="font-semibold text-on-surface">Serat Pangan</span>
+                        </div>
+                      </td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/20"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">3.21</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-center bg-surface-container-high/40"><span
+                          class="font-metric-num-md text-metric-num-md text-primary font-bold">4.49</span><span
+                          class="font-label-sm text-label-sm text-on-surface-variant ml-1">gram</span></td>
+                      <td class="py-space-sm px-space-sm text-right"><span
+                          class="inline-block px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-label-sm text-label-sm font-semibold">Pencernaan
+                          Sehat</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- AKG Visual Bar Comparison Charts -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs progress-charts">
+                <!-- Box Porsi Kecil -->
+                <div
+                  class="bg-surface-container-high/70 p-space-md rounded-xl flex flex-col gap-space-xs border border-surface-container-high hover:border-primary/30 transition-colors">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-md text-label-md text-on-surface font-semibold">Tingkat Kecukupan AKG (Porsi
+                      Kecil)</span>
+                    <span class="font-label-sm text-label-sm text-primary font-bold">100% Target Tercapai</span>
+                  </div>
+                  <div class="space-y-2 mt-1">
+                    <div>
+                      <div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+                        <span>Energi (448.19 kkal)</span>
+                        <span id="akg-kecil-text" class="text-on-surface font-mono">98%</span>
+                      </div>
+                      <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                        <div
+                          class="progress-bar h-full bg-primary rounded-full transition-all duration-[1500ms] ease-out"
+                          style="width: 0%;" id="akg-kecil-bar" data-width="98%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+                        <span>Protein (15.13g)</span>
+                        <span class="text-on-surface font-mono">105%</span>
+                      </div>
+                      <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                        <div
+                          class="progress-bar h-full bg-tertiary-container rounded-full transition-all duration-[1500ms] ease-out delay-100"
+                          style="width: 0%;" id="akg-besar-bar" data-width="100%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Box Porsi Besar -->
+                <div
+                  class="bg-surface-container-high/70 p-space-md rounded-xl flex flex-col gap-space-xs border border-surface-container-high hover:border-primary/30 transition-colors">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-md text-label-md text-on-surface font-semibold">Tingkat Kecukupan AKG (Porsi
+                      Besar)</span>
+                    <span class="font-label-sm text-label-sm text-primary font-bold">102% Target Tercapai</span>
+                  </div>
+                  <div class="space-y-2 mt-1">
+                    <div>
+                      <div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+                        <span>Energi (736.55 kkal)</span>
+                        <span id="akg-besar-text" class="text-on-surface font-mono">101%</span>
+                      </div>
+                      <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                        <div
+                          class="progress-bar h-full bg-primary rounded-full transition-all duration-[1500ms] ease-out delay-200"
+                          style="width: 0%;" data-width="100%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+                        <span>Protein (25.03g)</span>
+                        <span class="text-on-surface font-mono">108%</span>
+                      </div>
+                      <div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden">
+                        <div
+                          class="progress-bar h-full bg-tertiary-container rounded-full transition-all duration-[1500ms] ease-out delay-300"
+                          style="width: 0%;" data-width="100%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Auditor Signature Bar -->
+              <div
+                class="pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-sm text-outline font-label-sm text-label-sm">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-emerald-400 text-[18px]">verified</span>
+                  <span>Disetujui Ahli Gizi: <strong class="text-on-surface-variant">dr. Ratna S., Sp.GK</strong> (Tim
+                    Monev BGN Makasssar)</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(0,0,0,0.3)] mt-auto z-10 relative">
+    <div
+      class="w-full max-w-[1440px] mx-auto px-4 md:px-gutter-desktop py-space-md md:py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+      <div class="flex items-center gap-space-sm text-on-surface-variant">
+        <span class="material-symbols-outlined text-primary text-[20px]">soup_kitchen</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Disiapkan di dapur SPPG Kota Makassar |
+          Yayasan Tunas Ilmu Makassar | Program Prioritas Nasional MBG</p>
+      </div>
+      <div class="flex items-center gap-space-lg">
+        <a class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors flex items-center gap-space-xxs group"
+          href="#">
+          <span class="material-symbols-outlined text-[16px] group-hover:scale-110 transition-transform">verified</span>
+          Portal Transparansi Publik
+        </a>
+        <span class="font-label-sm text-label-sm text-on-surface-variant">© 2026 MBG Makassar</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side Interactive Scripts -->
+  <script src="assets/js/script.js"></script>
+</html>

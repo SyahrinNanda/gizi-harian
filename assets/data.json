@@ -1,0 +1,638 @@
+[
+  {
+    "day_id": 1,
+    "title": "Ayam Kecap & Sup Jagung",
+    "dokumentasi": {
+      "image_url": "assets/image/1788428363194-WhatsApp_Image_2026-08-07_at_4.50.09_PM.jpeg",
+      "batch_time": "BATCH #07:30-WITA",
+      "description": "Nasi putih, ayam kecap pedas manis, perkedel kentang, sup jagung wortel, dan pisang ambon."
+    },
+    "isi_ompreng": [
+      {
+        "icon": "rice_bowl",
+        "category": "Makanan Pokok",
+        "badge": "Beras Premium",
+        "title": "Nasi Putih Pulen",
+        "desc": "Porsi pas, hangat, dimasak dari beras petani lokal Makassar tanpa pemutih.",
+        "left_bottom": "100 - 180g",
+        "right_bottom": "Tergantung jenjang",
+        "is_block_right": true
+      },
+      {
+        "icon": "set_meal",
+        "category": "Lauk Hewani",
+        "title": "Ayam Kecap",
+        "desc": "Potongan ayam ras tanpa tulang dimasak dengan kecap manis rempah lokal.",
+        "left_bottom": "Sumber Protein",
+        "right_bottom": "12g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "spa",
+        "category": "Lauk Nabati",
+        "title": "Perkedel Kentang",
+        "desc": "Kentang tumbuk gurih digoreng dengan lapisan telur, tinggi karbohidrat kompleks.",
+        "left_bottom": "Energi Ekstra",
+        "right_bottom": "4g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Sayur Segar",
+        "title": "Sup Jagung Wortel",
+        "desc": "Kuah kaldu ayam asli dengan pipilan jagung manis dan potongan wortel dadu.",
+        "left_bottom": "Vit A & Serat",
+        "right_bottom": "Kaya Mikronutrien",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Buah Segar",
+        "title": "Pisang Ambon",
+        "desc": "1 buah pisang ambon manis, pencuci mulut kaya kalium.",
+        "left_bottom": "Imunitas Tubuh",
+        "right_bottom": "Kalium Tinggi",
+        "is_block_right": false
+      }
+    ],
+    "gizi": {
+      "energi": {
+        "kecil": 450.5,
+        "besar": 740.2,
+        "akg": "30-35% Total Harian"
+      },
+      "protein": {
+        "kecil": 16,
+        "besar": 26.5,
+        "akg": "Tinggi Protein"
+      },
+      "lemak": {
+        "kecil": 18.5,
+        "besar": 25,
+        "akg": "< 25% Energi"
+      },
+      "karbohidrat": {
+        "kecil": 58,
+        "besar": 105,
+        "akg": "Kompleks & Pulen"
+      },
+      "serat": {
+        "kecil": 3.5,
+        "besar": 5,
+        "akg": "Pencernaan Sehat"
+      }
+    },
+    "akg_charts": {
+      "kecil": {
+        "kalori": {
+          "current": 100,
+          "target": 100
+        },
+        "protein": {
+          "current": 112,
+          "target": 100
+        }
+      },
+      "besar": {
+        "kalori": {
+          "current": 103,
+          "target": 100
+        },
+        "protein": {
+          "current": 118,
+          "target": 100
+        }
+      }
+    }
+  },
+  {
+    "day_id": 2,
+    "title": "Ikan Nila Bakar & Bayam",
+    "dokumentasi": {
+      "image_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=600&h=750",
+      "batch_time": "BATCH #07:15-WITA",
+      "description": "Nasi putih, ikan nila bakar madu, tahu goreng, sayur bening bayam, pepaya."
+    },
+    "isi_ompreng": [
+      {
+        "icon": "rice_bowl",
+        "category": "Makanan Pokok",
+        "badge": "Beras Premium",
+        "title": "Nasi Putih Pulen",
+        "desc": "Porsi pas, hangat, dimasak dari beras petani lokal Makassar tanpa pemutih.",
+        "left_bottom": "100 - 180g",
+        "right_bottom": "Tergantung jenjang",
+        "is_block_right": true
+      },
+      {
+        "icon": "set_meal",
+        "category": "Lauk Hewani",
+        "title": "Ikan Nila Bakar",
+        "desc": "Ikan nila segar dibakar dengan olesan madu dan kecap, kaya omega-3.",
+        "left_bottom": "Sumber Omega-3",
+        "right_bottom": "14g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "spa",
+        "category": "Lauk Nabati",
+        "title": "Tahu Goreng",
+        "desc": "Tahu putih segar digoreng gurih, sumber protein nabati kedelai.",
+        "left_bottom": "Kalsium Nabati",
+        "right_bottom": "5g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Sayur Segar",
+        "title": "Sayur Bening Bayam",
+        "desc": "Daun bayam hijau segar dimasak bening dengan potongan jagung manis.",
+        "left_bottom": "Kaya Zat Besi",
+        "right_bottom": "Mencegah Anemia",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Buah Segar",
+        "title": "Pepaya Potong",
+        "desc": "Potongan buah pepaya matang manis pencegah sembelit.",
+        "left_bottom": "Vit C & Enzim",
+        "right_bottom": "Pencernaan Lancar",
+        "is_block_right": false
+      }
+    ],
+    "gizi": {
+      "energi": {
+        "kecil": 430,
+        "besar": 710,
+        "akg": "30-35% Total Harian"
+      },
+      "protein": {
+        "kecil": 18,
+        "besar": 29,
+        "akg": "Sangat Tinggi Protein"
+      },
+      "lemak": {
+        "kecil": 14.5,
+        "besar": 22,
+        "akg": "< 25% Energi"
+      },
+      "karbohidrat": {
+        "kecil": 54,
+        "besar": 100,
+        "akg": "Kompleks & Pulen"
+      },
+      "serat": {
+        "kecil": 4.5,
+        "besar": 6.5,
+        "akg": "Pencernaan Sangat Sehat"
+      }
+    },
+    "akg_charts": {
+      "kecil": {
+        "kalori": {
+          "current": 105,
+          "target": 100
+        },
+        "protein": {
+          "current": 117,
+          "target": 100
+        }
+      },
+      "besar": {
+        "kalori": {
+          "current": 108,
+          "target": 100
+        },
+        "protein": {
+          "current": 123,
+          "target": 100
+        }
+      }
+    }
+  },
+  {
+    "day_id": 3,
+    "title": "Bola Daging Saus Tiram",
+    "dokumentasi": {
+      "image_url": "assets/image/1788428309654-ChatGPT_Image_Sep_2__2026__10_30_59_AM.png",
+      "batch_time": "BATCH #07:30-WITA",
+      "description": "Nasi putih, bola daging giling sapi, tempe bacem, tumis buncis wortel, jeruk manis."
+    },
+    "isi_ompreng": [
+      {
+        "icon": "rice_bowl",
+        "category": "Makanan Pokok",
+        "badge": "Beras Premium",
+        "title": "Nasi Putih Pulen",
+        "desc": "Porsi pas, hangat, dimasak dari beras petani lokal Makassar tanpa pemutih.",
+        "left_bottom": "100 - 180g",
+        "right_bottom": "Tergantung jenjang",
+        "is_block_right": true
+      },
+      {
+        "icon": "set_meal",
+        "category": "Lauk Hewani",
+        "title": "Bola Daging Sapi",
+        "desc": "Daging sapi giling asli dibentuk bola dan dimasak bumbu saus tiram.",
+        "left_bottom": "Tinggi Zat Besi",
+        "right_bottom": "15g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "spa",
+        "category": "Lauk Nabati",
+        "title": "Tempe Bacem",
+        "desc": "Tempe pilihan direbus perlahan dengan gula merah dan ketumbar.",
+        "left_bottom": "Kedelai Murni",
+        "right_bottom": "6g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Sayur Segar",
+        "title": "Tumis Buncis Wortel",
+        "desc": "Buncis muda dan wortel ditumis renyah dengan sedikit bawang putih.",
+        "left_bottom": "Serat Pangan",
+        "right_bottom": "Vit K & A",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Buah Segar",
+        "title": "Jeruk Manis",
+        "desc": "1 butir buah utuh segar bercita rasa manis asam alami.",
+        "left_bottom": "Imunitas Tubuh",
+        "right_bottom": "45mg Vit C",
+        "is_block_right": false
+      }
+    ],
+    "gizi": {
+      "energi": {
+        "kecil": 480,
+        "besar": 760,
+        "akg": "30-35% Total Harian"
+      },
+      "protein": {
+        "kecil": 19.5,
+        "besar": 31,
+        "akg": "Tinggi Protein Hewani"
+      },
+      "lemak": {
+        "kecil": 21,
+        "besar": 32,
+        "akg": "< 25% Energi"
+      },
+      "karbohidrat": {
+        "kecil": 56,
+        "besar": 102,
+        "akg": "Kompleks & Pulen"
+      },
+      "serat": {
+        "kecil": 3.8,
+        "besar": 5.5,
+        "akg": "Pencernaan Sehat"
+      }
+    },
+    "akg_charts": {
+      "kecil": {
+        "kalori": {
+          "current": 110,
+          "target": 100
+        },
+        "protein": {
+          "current": 122,
+          "target": 100
+        }
+      },
+      "besar": {
+        "kalori": {
+          "current": 115,
+          "target": 100
+        },
+        "protein": {
+          "current": 130,
+          "target": 100
+        }
+      }
+    }
+  },
+  {
+    "day_id": 4,
+    "title": "Dimsum Ayam & Tempe",
+    "dokumentasi": {
+      "image_url": "assets/image/1788428299647-Gemini_Generated_Image_rykk0orykk0orykk.jpg",
+      "batch_time": "BATCH #07:30-WITA",
+      "description": "Nasi putih, dimsum ayam kukus, tempe oreg renyah gurih, sayur labu kuning, dan jeruk manis lokal."
+    },
+    "isi_ompreng": [
+      {
+        "icon": "rice_bowl",
+        "category": "Makanan Pokok",
+        "badge": "Beras Premium",
+        "title": "Nasi Putih Pulen",
+        "desc": "Porsi pas, hangat, dimasak dari beras petani lokal Makassar tanpa pemutih.",
+        "left_bottom": "100 - 180g",
+        "right_bottom": "Tergantung jenjang",
+        "is_block_right": true
+      },
+      {
+        "icon": "set_meal",
+        "category": "Lauk Hewani",
+        "title": "Dimsum Ayam",
+        "desc": "2 pcs padat gizi protein tinggi dari daging ayam cincang segar rempah alami, dikukus higienis.",
+        "left_bottom": "Sumber Protein",
+        "right_bottom": "9.8g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "spa",
+        "category": "Lauk Nabati",
+        "title": "Tempe Oreg",
+        "desc": "Gurih manis renyah kaya isoflavon dan protein nabati berbahan dasar kedelai murni pilihan.",
+        "left_bottom": "Fermentasi Alami",
+        "right_bottom": "5.3g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Sayur Segar",
+        "title": "Sayur Bening Labu & Kacang",
+        "desc": "Labu kuning manis dan kacang panjang renyah dalam kaldu bening gurih tanpa MSG buatan.",
+        "left_bottom": "Vit. A & Serat Pangan",
+        "right_bottom": "Kaya Mikronutrien",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Buah Segar",
+        "title": "Jeruk Madu Siam",
+        "desc": "1 butir buah utuh segar bercita rasa manis asam alami, pembersih mulut kaya vitamin C.",
+        "left_bottom": "Imunitas Tubuh",
+        "right_bottom": "45mg Vit C",
+        "is_block_right": false
+      }
+    ],
+    "gizi": {
+      "energi": {
+        "kecil": 448.19,
+        "besar": 736.55,
+        "akg": "30-35% Total Harian"
+      },
+      "protein": {
+        "kecil": 15.13,
+        "besar": 25.03,
+        "akg": "Tinggi Protein"
+      },
+      "lemak": {
+        "kecil": 19.04,
+        "besar": 26.58,
+        "akg": "< 25% Energi"
+      },
+      "karbohidrat": {
+        "kecil": 56.42,
+        "besar": 102.44,
+        "akg": "Kompleks & Pulen"
+      },
+      "serat": {
+        "kecil": 3.21,
+        "besar": 4.49,
+        "akg": "Pencernaan Sehat"
+      }
+    },
+    "akg_charts": {
+      "kecil": {
+        "kalori": {
+          "current": 98,
+          "target": 100
+        },
+        "protein": {
+          "current": 110,
+          "target": 100
+        }
+      },
+      "besar": {
+        "kalori": {
+          "current": 101,
+          "target": 100
+        },
+        "protein": {
+          "current": 116,
+          "target": 100
+        }
+      }
+    }
+  },
+  {
+    "day_id": 5,
+    "title": "Telur Balado & Sayur Lodeh",
+    "dokumentasi": {
+      "image_url": "assets/image/1788428321043-ChatGPT_Image_Sep_2__2026__10_09_37_AM.png",
+      "batch_time": "BATCH #07:00-WITA",
+      "description": "Nasi putih, telur ayam rebus bumbu balado, tahu isi sayur, sayur lodeh nangka, semangka."
+    },
+    "isi_ompreng": [
+      {
+        "icon": "rice_bowl",
+        "category": "Makanan Pokok",
+        "badge": "Beras Premium",
+        "title": "Nasi Putih Pulen",
+        "desc": "Porsi pas, hangat, dimasak dari beras petani lokal Makassar tanpa pemutih.",
+        "left_bottom": "100 - 180g",
+        "right_bottom": "Tergantung jenjang",
+        "is_block_right": true
+      },
+      {
+        "icon": "set_meal",
+        "category": "Lauk Hewani",
+        "title": "Telur Bumbu Balado",
+        "desc": "Telur ayam rebus dengan bumbu cabai tomat segar (tidak terlalu pedas).",
+        "left_bottom": "Sumber Kolin",
+        "right_bottom": "11g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "spa",
+        "category": "Lauk Nabati",
+        "title": "Tahu Isi Kukus",
+        "desc": "Tahu diisi campuran sayuran cincang dan dikukus sehat.",
+        "left_bottom": "Padat Gizi",
+        "right_bottom": "5g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Sayur Segar",
+        "title": "Sayur Lodeh Nangka Muda",
+        "desc": "Potongan nangka muda dan daun melinjo dimasak santan encer bergizi.",
+        "left_bottom": "Serat Pangan",
+        "right_bottom": "Lemak Nabati Baik",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Buah Segar",
+        "title": "Semangka Merah",
+        "desc": "Potongan semangka merah manis kaya kandungan air penyegar dahaga.",
+        "left_bottom": "Hidrasi Alami",
+        "right_bottom": "Kaya Likopen",
+        "is_block_right": false
+      }
+    ],
+    "gizi": {
+      "energi": {
+        "kecil": 460,
+        "besar": 755,
+        "akg": "30-35% Total Harian"
+      },
+      "protein": {
+        "kecil": 17.5,
+        "besar": 28,
+        "akg": "Tinggi Protein Lengkap"
+      },
+      "lemak": {
+        "kecil": 22,
+        "besar": 33,
+        "akg": "< 25% Energi"
+      },
+      "karbohidrat": {
+        "kecil": 55,
+        "besar": 101,
+        "akg": "Kompleks & Pulen"
+      },
+      "serat": {
+        "kecil": 4,
+        "besar": 6,
+        "akg": "Pencernaan Sehat"
+      }
+    },
+    "akg_charts": {
+      "kecil": {
+        "kalori": {
+          "current": 102,
+          "target": 100
+        },
+        "protein": {
+          "current": 114,
+          "target": 100
+        }
+      },
+      "besar": {
+        "kalori": {
+          "current": 105,
+          "target": 100
+        },
+        "protein": {
+          "current": 120,
+          "target": 100
+        }
+      }
+    }
+  },
+  {
+    "day_id": 6,
+    "title": "Nasi Kuning Komplit MBG",
+    "dokumentasi": {
+      "image_url": "assets/image/1788428340693-IMG-20260828-WA0013.jpg",
+      "batch_time": "BATCH #07:30-WITA",
+      "description": "Nasi kuning kunyit, ayam suwir serundeng, perkedel jagung, kering tempe, melon."
+    },
+    "isi_ompreng": [
+      {
+        "icon": "rice_bowl",
+        "category": "Menu Spesial",
+        "badge": "Rempah Alami",
+        "title": "Nasi Kuning Kunyit",
+        "desc": "Nasi pulen dimasak dengan kunyit, santan kelapa asli, dan rempah aromatik.",
+        "left_bottom": "100 - 180g",
+        "right_bottom": "Tergantung jenjang",
+        "is_block_right": true
+      },
+      {
+        "icon": "set_meal",
+        "category": "Lauk Hewani",
+        "title": "Ayam Suwir Serundeng",
+        "desc": "Suwiran daging ayam dimasak gurih dengan taburan kelapa sangrai.",
+        "left_bottom": "Protein Gurih",
+        "right_bottom": "14g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "spa",
+        "category": "Lauk Nabati",
+        "title": "Perkedel Jagung / Tempe",
+        "desc": "Jagung manis tumbuk kasar digoreng keemasan / Kering tempe manis.",
+        "left_bottom": "Kalsium Nabati",
+        "right_bottom": "5.5g Protein",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Sayur Pendamping",
+        "title": "Acar Kuning Wortel Timun",
+        "desc": "Irisan tipis wortel dan timun bumbu kuning segar pembangkit selera.",
+        "left_bottom": "Serat Segar",
+        "right_bottom": "Vit C Alami",
+        "is_block_right": false
+      },
+      {
+        "icon": "nutrition",
+        "category": "Buah Segar",
+        "title": "Melon Hijau",
+        "desc": "Potongan melon hijau manis renyah kaya vitamin B6 dan C.",
+        "left_bottom": "Hidrasi Alami",
+        "right_bottom": "Menyegarkan",
+        "is_block_right": false
+      }
+    ],
+    "gizi": {
+      "energi": {
+        "kecil": 495,
+        "besar": 785,
+        "akg": "30-35% Total Harian"
+      },
+      "protein": {
+        "kecil": 18,
+        "besar": 30,
+        "akg": "Tinggi Protein"
+      },
+      "lemak": {
+        "kecil": 23.5,
+        "besar": 35,
+        "akg": "< 25% Energi"
+      },
+      "karbohidrat": {
+        "kecil": 59,
+        "besar": 110,
+        "akg": "Rempah Sehat"
+      },
+      "serat": {
+        "kecil": 3.5,
+        "besar": 5.5,
+        "akg": "Pencernaan Sehat"
+      }
+    },
+    "akg_charts": {
+      "kecil": {
+        "kalori": {
+          "current": 104,
+          "target": 100
+        },
+        "protein": {
+          "current": 116,
+          "target": 100
+        }
+      },
+      "besar": {
+        "kalori": {
+          "current": 110,
+          "target": 100
+        },
+        "protein": {
+          "current": 125,
+          "target": 100
+        }
+      }
+    }
+  }
+]
