@@ -1,11 +1,3 @@
-# Environment variables (SANGAT PENTING: Jangan dihapus agar password admin tidak bocor ke publik)
 .env
-
-# Mac OS OS files
+node_modules/
 .DS_Store
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.system_generated/
