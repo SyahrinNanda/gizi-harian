@@ -3,7 +3,7 @@
     "day_id": 1,
     "title": "Ayam Kecap & Sup Jagung",
     "dokumentasi": {
-      "image_url": "assets/image/1788428363194-WhatsApp_Image_2026-08-07_at_4.50.09_PM.jpeg",
+      "image_url": "assets/image/1788481553381-ayam-kecap.jpg",
       "batch_time": "BATCH #07:30-WITA",
       "description": "Nasi putih, ayam kecap pedas manis, perkedel kentang, sup jagung wortel, dan pisang ambon."
     },
@@ -109,7 +109,7 @@
     "day_id": 2,
     "title": "Ikan Nila Bakar & Bayam",
     "dokumentasi": {
-      "image_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=600&h=750",
+      "image_url": "assets/image/1788481559114-ikan-nila-bakar.jpg",
       "batch_time": "BATCH #07:15-WITA",
       "description": "Nasi putih, ikan nila bakar madu, tahu goreng, sayur bening bayam, pepaya."
     },
@@ -215,7 +215,7 @@
     "day_id": 3,
     "title": "Bola Daging Saus Tiram",
     "dokumentasi": {
-      "image_url": "assets/image/1788428309654-ChatGPT_Image_Sep_2__2026__10_30_59_AM.png",
+      "image_url": "assets/image/1788481566117-bola-daging-saus.jpg",
       "batch_time": "BATCH #07:30-WITA",
       "description": "Nasi putih, bola daging giling sapi, tempe bacem, tumis buncis wortel, jeruk manis."
     },
@@ -321,7 +321,7 @@
     "day_id": 4,
     "title": "Dimsum Ayam & Tempe",
     "dokumentasi": {
-      "image_url": "assets/image/1788428299647-Gemini_Generated_Image_rykk0orykk0orykk.jpg",
+      "image_url": "assets/image/1788481696753-dimsum-ayam.jpg",
       "batch_time": "BATCH #07:30-WITA",
       "description": "Nasi putih, dimsum ayam kukus, tempe oreg renyah gurih, sayur labu kuning, dan jeruk manis lokal."
     },
@@ -427,7 +427,7 @@
     "day_id": 5,
     "title": "Telur Balado & Sayur Lodeh",
     "dokumentasi": {
-      "image_url": "assets/image/1788428321043-ChatGPT_Image_Sep_2__2026__10_09_37_AM.png",
+      "image_url": "assets/image/1788481625840-telur-balado.jpg",
       "batch_time": "BATCH #07:00-WITA",
       "description": "Nasi putih, telur ayam rebus bumbu balado, tahu isi sayur, sayur lodeh nangka, semangka."
     },
@@ -524,112 +524,6 @@
         },
         "protein": {
           "current": 120,
-          "target": 100
-        }
-      }
-    }
-  },
-  {
-    "day_id": 6,
-    "title": "Nasi Kuning Komplit MBG",
-    "dokumentasi": {
-      "image_url": "assets/image/1788428340693-IMG-20260828-WA0013.jpg",
-      "batch_time": "BATCH #07:30-WITA",
-      "description": "Nasi kuning kunyit, ayam suwir serundeng, perkedel jagung, kering tempe, melon."
-    },
-    "isi_ompreng": [
-      {
-        "icon": "rice_bowl",
-        "category": "Menu Spesial",
-        "badge": "Rempah Alami",
-        "title": "Nasi Kuning Kunyit",
-        "desc": "Nasi pulen dimasak dengan kunyit, santan kelapa asli, dan rempah aromatik.",
-        "left_bottom": "100 - 180g",
-        "right_bottom": "Tergantung jenjang",
-        "is_block_right": true
-      },
-      {
-        "icon": "set_meal",
-        "category": "Lauk Hewani",
-        "title": "Ayam Suwir Serundeng",
-        "desc": "Suwiran daging ayam dimasak gurih dengan taburan kelapa sangrai.",
-        "left_bottom": "Protein Gurih",
-        "right_bottom": "14g Protein",
-        "is_block_right": false
-      },
-      {
-        "icon": "spa",
-        "category": "Lauk Nabati",
-        "title": "Perkedel Jagung / Tempe",
-        "desc": "Jagung manis tumbuk kasar digoreng keemasan / Kering tempe manis.",
-        "left_bottom": "Kalsium Nabati",
-        "right_bottom": "5.5g Protein",
-        "is_block_right": false
-      },
-      {
-        "icon": "nutrition",
-        "category": "Sayur Pendamping",
-        "title": "Acar Kuning Wortel Timun",
-        "desc": "Irisan tipis wortel dan timun bumbu kuning segar pembangkit selera.",
-        "left_bottom": "Serat Segar",
-        "right_bottom": "Vit C Alami",
-        "is_block_right": false
-      },
-      {
-        "icon": "nutrition",
-        "category": "Buah Segar",
-        "title": "Melon Hijau",
-        "desc": "Potongan melon hijau manis renyah kaya vitamin B6 dan C.",
-        "left_bottom": "Hidrasi Alami",
-        "right_bottom": "Menyegarkan",
-        "is_block_right": false
-      }
-    ],
-    "gizi": {
-      "energi": {
-        "kecil": 495,
-        "besar": 785,
-        "akg": "30-35% Total Harian"
-      },
-      "protein": {
-        "kecil": 18,
-        "besar": 30,
-        "akg": "Tinggi Protein"
-      },
-      "lemak": {
-        "kecil": 23.5,
-        "besar": 35,
-        "akg": "< 25% Energi"
-      },
-      "karbohidrat": {
-        "kecil": 59,
-        "besar": 110,
-        "akg": "Rempah Sehat"
-      },
-      "serat": {
-        "kecil": 3.5,
-        "besar": 5.5,
-        "akg": "Pencernaan Sehat"
-      }
-    },
-    "akg_charts": {
-      "kecil": {
-        "kalori": {
-          "current": 104,
-          "target": 100
-        },
-        "protein": {
-          "current": 116,
-          "target": 100
-        }
-      },
-      "besar": {
-        "kalori": {
-          "current": 110,
-          "target": 100
-        },
-        "protein": {
-          "current": 125,
           "target": 100
         }
       }

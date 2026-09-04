@@ -352,12 +352,13 @@
         const activeTabIndex = ref(0);
         const activeDayData = computed(() => allData.value[activeTabIndex.value]);
         
-        const dayNames = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const dayNames = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
 
         // Dynamic API Base URL
-        // Jika dibuka dari npx serve (port 3000), tembak ke 8080. Jika di-deploy, gunakan path relatif '/api'
+        // Jika dibuka dari npx serve (port 3000), gunakan hostname yang sama tapi port 8080.
+        // Hal ini memungkinkan akses dari HP (misal: 192.168.1.18). Jika di-deploy, gunakan path relatif '/api'.
         const API_BASE = window.location.port === '3000' || window.location.port === '8000' 
-          ? 'http://localhost:8080/api' 
+          ? `http://${window.location.hostname}:8080/api` 
           : '/api';
 
         const checkLogin = () => {
